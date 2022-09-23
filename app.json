@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "eMar",
+    "slug": "eMar",
+    "version": "1.0.0",
+    "privacy": "unlisted",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/margologo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "description": "",
+    "extra": {
+      "configChannel": "development"
+    },
+    "scheme": "carefor-emar",
+    "android": {
+      "package": "com.markybry.eMar",
+      "softwareKeyboardLayoutMode": "pan",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "plugins": [
+      "sentry-expo"
+    ],
+    "hooks": {
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    }
+  }
+}

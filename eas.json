@@ -1,0 +1,41 @@
+{
+  "cli": {
+    "version": ">= 0.45.1"
+  },
+  "build": {
+    "production": {
+      "releaseChannel": "production",
+      "env": {
+        "CAREFOR_EMAR_ENVIRONMENT": "production"
+      }
+    },
+    "pre-production": {
+      "releaseChannel": "production",
+      "env": {
+        "CAREFOR_EMAR_ENVIRONMENT": "production"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "development": {
+      "extends": "pre-production",
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "CAREFOR_EMAR_ENVIRONMENT": "development"
+      }
+    },
+    "staging": {
+      "extends": "pre-production",
+      "distribution": "internal",
+      "releaseChannel": "staging",
+      "env": {
+        "CAREFOR_EMAR_ENVIRONMENT": "staging"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
